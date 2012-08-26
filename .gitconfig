@@ -1,0 +1,7 @@
+[user]
+	name = Arkadiusz Gabryś
+	email = arkadiuszgabrys@gmail.com
+[core]
+	editor = vim
+[color]
+	ui = true
