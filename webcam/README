@@ -1,0 +1,8 @@
+Instrukcja instalacji sterownikow dla webcam Sony Vaio:
+    1. sudo apt-get install libglib2.0-dev libusb-dev build-essential gcc automake mercurial
+    2. cd r5u87x
+    3. make
+    4. sudo make install
+    5. sudo r5u87x-loader -- reload
+
+Program automatycznie będzie uruchamiał sterowniki, gdy wykryje kamerkę.
