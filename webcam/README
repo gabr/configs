@@ -6,3 +6,5 @@ Instrukcja instalacji sterownikow dla webcam Sony Vaio:
     5. sudo r5u87x-loader -- reload
 
 Program automatycznie będzie uruchamiał sterowniki, gdy wykryje kamerkę.
+
+Ale aby kamerka działala, musisz też zainstalować program cheese.
