@@ -1,7 +1,7 @@
 background yes
 
 #prawy dolny rog
-gap_x 1520
+gap_x 1205
 gap_y 15
 
 maximum_width 150
@@ -49,15 +49,14 @@ own_window yes
 # own_window_type dektop
 own_window_transparent yes
 # own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
-own_window_hints undecorateb, above, sticky, skip_pager, skip_taskbar
+own_window_hints undecorateb, below, sticky, skip_pager, skip_taskbar
 own_window_type override
 
 TEXT
 ${font :encoding=iso8859-2:size=25}${color #004280}${time %r}
 $alignc${font :encoding=iso8859-2:size=9}$alignc${color #ddaa00}${time %e %B %G}
-
 # $alignc${execi 60 ~/check_gmail.sh}
-$alignc${execi 120 ~/.whoami.sh}
+ $alignc${execi 60 ~/.whoami.sh}
 
 ${color slate grey}Kernel:
 $alignc${color }$kernel
@@ -72,16 +71,16 @@ ${font :size=8}${color #ddaa00}${top name 1}$alignr${top cpu 1}
 ${color lightgrey}${top name 2}$alignr${top cpu 2}
 ${color lightgrey}${top name 3}$alignr${top cpu 3}
 ${color lightgrey}${top name 4}$alignr${top cpu 4}
-${font :size=9}
+#${font :size=9}
 ${color slate grey}RAM:   $color%$memperc ${alignr}$mem
 ${membar 5,150}
 ${color slate grey}SWAP: $color%$swapperc ${alignr}$swap
 ${swapbar 5,150}
-${font :size=8}${color #ddaa00}${top_mem name 1}$alignr${top_mem mem 1}
-${color lightgrey}${top_mem name 2}$alignr${top_mem mem 2}
-${color lightgrey}${top_mem name 3}$alignr${top_mem mem 3}
-${color lightgrey}${top_mem name 4}$alignr${top_mem mem 4}
-${font :size=9}
+#${font :size=8}${color #ddaa00}${top_mem name 1}$alignr${top_mem mem 1}
+#${color lightgrey}${top_mem name 2}$alignr${top_mem mem 2}
+#${color lightgrey}${top_mem name 3}$alignr${top_mem mem 3}
+#${color lightgrey}${top_mem name 4}$alignr${top_mem mem 4}
+#${font :size=9}
 ${color slate grey}TWARDZIEL: $color$alignr$diskio
 ${color slate grey}${diskiograph 25,150 000000 ddaa00}
 ${color slate grey} /:${alignr}${color }
@@ -93,23 +92,23 @@ ${fs_bar 5,150 /mnt/system}
 ${color slate grey} /mnt/datas:${alignr}${color }
 ${fs_size /mnt/datas}${color slate grey} / ${color }${fs_free /mnt/datas}
 ${fs_bar 5,150 /mnt/datas}
-${color slate grey} /mnt/media:${alignr}${color }
-${fs_size /mnt/media}${color slate grey} / ${color }${fs_free /mnt/media}
-${fs_bar 5,150 /mnt/media}
-${color slate grey}INTERNET:
-${color} DL:${color #ddaa00}${downspeed eth0}
-${color} UP:${color #ddaa00}${upspeed eth0}
-${offset 2}${color}Total: ${color gray}${totaldown eth0} 
-${offset 2}${color}Total: ${color gray}${totalup eth0}
-${color slate grey}${downspeedgraph eth0 25,150 000000 ddaa00}
-${color slate grey}${upspeedgraph eth0 25,150 000000 ddaa00}
+#${color slate grey} /mnt/media:${alignr}${color }
+#${fs_size /mnt/media}${color slate grey} / ${color }${fs_free /mnt/media}
+#${fs_bar 5,150 /mnt/media}
+${color slate grey}INTERNET (eth0 / wlan0):
+${color} DL:${color #ddaa00} ${downspeed eth0} / ${downspeed wlan0}
+${color} UP:${color #ddaa00} ${upspeed eth0} / ${upspeed wlan0}
+${offset 2}${color}Total: ${color gray}${totaldown eth0} / ${totaldown wlan0} 
+${offset 2}${color}Total: ${color gray}${totalup eth0} / ${totalup wlan0}
+${color slate grey}${downspeedgraph eth0 25,70 000000 ddaa00}   ${downspeedgraph wlan0 25,70 000000 ddaa00}
+${color slate grey}${upspeedgraph eth0 25,70 000000 ddaa00}   ${upspeedgraph wlan0 25,70 000000 ddaa00}
 ${color slate grey}@Connections@
 $color Outbound: ${tcp_portmon 32768 61000 count}
 $color Inbound: ${tcp_portmon 1 32767 count}  
-${color slate grey}Outbound Connection$color
- ${tcp_portmon 32768 61000 rip 0} ${alignr} ${tcp_portmon 32768 61000 rservice 0}
- ${tcp_portmon 32768 61000 rip 1} ${alignr} ${tcp_portmon 32768 61000 rservice 1}
- ${tcp_portmon 32768 61000 rip 2} ${alignr} ${tcp_portmon 32768 61000 rservice 2}
- ${tcp_portmon 32768 61000 rip 3} ${alignr} ${tcp_portmon 32768 61000 rservice 3}
- ${tcp_portmon 32768 61000 rip 4} ${alignr} ${tcp_portmon 32768 61000 rservice 4}
- ${tcp_portmon 32768 61000 rip 4} ${alignr} ${tcp_portmon 32768 61000 rservice 5}
+# ${color slate grey}Outbound Connection$color
+#  ${tcp_portmon 32768 61000 rip 0} ${alignr} ${tcp_portmon 32768 61000 rservice 0}
+#  ${tcp_portmon 32768 61000 rip 1} ${alignr} ${tcp_portmon 32768 61000 rservice 1}
+#  ${tcp_portmon 32768 61000 rip 2} ${alignr} ${tcp_portmon 32768 61000 rservice 2}
+#  ${tcp_portmon 32768 61000 rip 3} ${alignr} ${tcp_portmon 32768 61000 rservice 3}
+#  ${tcp_portmon 32768 61000 rip 4} ${alignr} ${tcp_portmon 32768 61000 rservice 4}
+#  ${tcp_portmon 32768 61000 rip 4} ${alignr} ${tcp_portmon 32768 61000 rservice 5}
