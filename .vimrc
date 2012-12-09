@@ -122,3 +122,5 @@ endif
 " uruchamianie edytowanego pliku jako skrypt poprzez klawisz F3
 imap <F3> :!./%<CR>
 map  <F3> :!./%<CR>
+
+set guioptions=egtaci
