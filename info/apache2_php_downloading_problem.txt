@@ -1,0 +1,34 @@
+Jeśli podczas obsługiwania strony, przy próbie przejścia do pliku *.php lub
+zaakceptowaniu formularza, nie następuje władowanie pliku *.php tylko uruchamia
+się jego ściąganie należy wykonać następujące czynności:
+
+1. Zaleca się usunięcie apache2 i ponowna jego instalacja:
+
+    sudo apt-get -y remove --purge apache2 apache2-mpm-worker apache2-threaded-dev apache2-utils apache2.2-common libapache2-mod-python libapache2-mod-python-doc libapache2-mod-wsgi && sudo apt-get install -y apache2 apache2-mpm-worker apache2-threaded-dev apache2-utils apache2.2-common libapache2-mod-python libapache2-mod-python-doc libapache2-mod-wsgi
+
+2. Następnie ściągamy i uruchamiamy php5:
+
+    sudo apt-get install libapache2-mod-php5
+    sudo a2enmod php5
+
+3. Edytujemy plik /etc/apache2/httpd.conf i dodajemy następujące linie:
+
+    AddType application/x-httpd-php .php
+    AddType application/x-httpd-php .php3
+    AddType application/x-httpd-php .php4
+    AddType application/x-httpd-php .phtml
+
+4. Jeszcze tylko mała poprawka aby nie występowały błędy przy restartowaniu
+   serwera, czyli dopisujemy następującą linię na koniec pliku
+   /etc/apache2/apache2.conf:
+
+   ServerName localhost
+
+5. Restart serwera:
+
+    sudo /etc/init.d/apache2 restart
+
+6. GOTOWE! Pamiętaj aby otwierać stronę wpisując w pasku adresru wyszukiwarki
+   localhost/sciezka/do/pliku.html zamiast file:///sciezka/do/pliku.html
+
+gabr
