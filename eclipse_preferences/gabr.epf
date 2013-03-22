@@ -1,4 +1,4 @@
-#Sat Feb 23 18:17:29 CET 2013
+#Sat Feb 23 18:36:19 CET 2013
 /instance/org.eclipse.team.ui/org.eclipse.team.ui.first_time=false
 /instance/org.eclipse.jdt.ui/java_operator=240,239,208
 /instance/org.eclipse.jdt.ui/semanticHighlighting.interface.enabled=true
@@ -30,6 +30,7 @@
 /instance/org.eclipse.jdt.ui/useAnnotationsPrefPage=true
 /instance/org.eclipse.ui.workbench/android-gabr_persp=<?xml version\="1.0" encoding\="UTF-8"?>\n<perspective editorAreaTrimState\="2" editorAreaVisible\="1" fixed\="0" version\="0.016">\n<descriptor descriptor\="org.eclipse.jdt.ui.JavaPerspective" id\="android-gabr" label\="android-gabr"/>\n<window height\="1048" width\="1517" x\="0" y\="2"/>\n<alwaysOnActionSet id\="org.eclipse.ui.cheatsheets.actionSet"/>\n<alwaysOnActionSet id\="org.eclipse.search.searchActionSet"/>\n<alwaysOnActionSet id\="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>\n<alwaysOnActionSet id\="org.eclipse.ui.edit.text.actionSet.navigation"/>\n<alwaysOnActionSet id\="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>\n<alwaysOnActionSet id\="org.eclipse.ui.externaltools.ExternalToolsSet"/>\n<alwaysOnActionSet id\="org.eclipse.ui.actionSet.keyBindings"/>\n<alwaysOnActionSet id\="org.eclipse.ui.actionSet.openFiles"/>\n<alwaysOnActionSet id\="org.eclipse.debug.ui.launchActionSet"/>\n<alwaysOnActionSet id\="org.eclipse.jdt.ui.JavaActionSet"/>\n<alwaysOnActionSet id\="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>\n<alwaysOnActionSet id\="org.eclipse.ui.NavigateActionSet"/>\n<alwaysOnActionSet id\="adt.actionSet.wizards"/>\n<alwaysOnActionSet id\="adt.actionSet.avdManager"/>\n<alwaysOnActionSet id\="adt.actionSet.lint"/>\n<alwaysOnActionSet id\="adt.actionSet.refactorings"/>\n<alwaysOnActionSet id\="org.eclipse.debug.ui.breakpointActionSet"/>\n<alwaysOnActionSet id\="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>\n<alwaysOnActionSet id\="org.eclipse.jdt.junit.JUnitActionSet"/>\n<show_view_action id\="org.eclipse.jdt.ui.PackageExplorer"/>\n<show_view_action id\="org.eclipse.jdt.ui.TypeHierarchy"/>\n<show_view_action id\="org.eclipse.jdt.ui.SourceView"/>\n<show_view_action id\="org.eclipse.jdt.ui.JavadocView"/>\n<show_view_action id\="org.eclipse.search.ui.views.SearchView"/>\n<show_view_action id\="org.eclipse.ui.console.ConsoleView"/>\n<show_view_action id\="org.eclipse.ui.views.ContentOutline"/>\n<show_view_action id\="org.eclipse.ui.views.ProblemView"/>\n<show_view_action id\="org.eclipse.ui.views.ResourceNavigator"/>\n<show_view_action id\="org.eclipse.ui.views.TaskList"/>\n<show_view_action id\="org.eclipse.ui.views.ProgressView"/>\n<show_view_action id\="org.eclipse.ui.navigator.ProjectExplorer"/>\n<show_view_action id\="org.eclipse.ui.texteditor.TemplatesView"/>\n<show_view_action id\="org.eclipse.pde.runtime.LogView"/>\n<show_view_action id\="org.eclipse.ant.ui.views.AntView"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.ui.wizards.NewJavaWorkingSetWizard"/>\n<new_wizard_action id\="org.eclipse.ui.wizards.new.folder"/>\n<new_wizard_action id\="org.eclipse.ui.wizards.new.file"/>\n<new_wizard_action id\="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>\n<new_wizard_action id\="com.android.ide.eclipse.adt.project.NewProjectWizard"/>\n<new_wizard_action id\="com.android.ide.eclipse.editors.wizards.NewXmlFileWizard"/>\n<new_wizard_action id\="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>\n<perspective_action id\="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>\n<perspective_action id\="org.eclipse.debug.ui.DebugPerspective"/>\n<perspective_action id\="com.android.ide.eclipse.ddms.Perspective"/>\n<perspective_action id\="com.android.ide.eclipse.hierarchyviewer.PixelPerfectPespective"/>\n<perspective_action id\="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"/>\n<hide_toolbar_item_id id\="org.eclipse.debug.ui.commands.RunToLine"/>\n<hide_toolbar_item_id id\="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>\n<hide_toolbar_item_id id\="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>\n<view id\="org.eclipse.jdt.ui.PackageExplorer"/>\n<view id\="org.eclipse.ui.views.ProblemView"/>\n<view id\="org.eclipse.jdt.ui.JavadocView"/>\n<view id\="org.eclipse.jdt.ui.SourceView"/>\n<view id\="org.eclipse.ui.console.ConsoleView"/>\n<view id\="com.android.ide.eclipse.ddms.views.LogCatView"/>\n<view id\="org.eclipse.ui.views.ContentOutline"/>\n<view id\="org.eclipse.ui.internal.introview"/>\n<fastViewBars/>\n<layout>\n<mainWindow>\n<info folder\="true" part\="left">\n<folder activePageID\="org.eclipse.jdt.ui.PackageExplorer" appearance\="2" expanded\="2">\n<page content\="org.eclipse.jdt.ui.PackageExplorer" label\="Package Explorer"/>\n<page content\="org.eclipse.jdt.ui.TypeHierarchy" label\="LabelNotFound"/>\n<page content\="org.eclipse.ui.views.ResourceNavigator" label\="LabelNotFound"/>\n<page content\="org.eclipse.ui.navigator.ProjectExplorer" label\="LabelNotFound"/>\n<page content\="org.eclipse.jdt.junit.ResultView" label\="LabelNotFound"/>\n<presentation id\="org.eclipse.ui.presentations.WorkbenchPresentationFactory">\n<part id\="0"/>\n</presentation>\n</folder>\n</info>\n<info folder\="true" part\="org.eclipse.ui.internal.ViewStack@57240e" ratio\="0.7495049" ratioLeft\="757" ratioRight\="253" relationship\="2" relative\="left">\n<folder activePageID\="org.eclipse.ui.internal.introview" appearance\="2" expanded\="2">\n<page content\="org.eclipse.ui.internal.introview" label\="Android IDE"/>\n<page content\="org.eclipse.help.ui.HelpView" label\="LabelNotFound"/>\n<page content\="org.eclipse.ui.cheatsheets.views.CheatSheetView" label\="LabelNotFound"/>\n<presentation id\="org.eclipse.ui.presentations.WorkbenchPresentationFactory">\n<part id\="0"/>\n</presentation>\n</folder>\n</info>\n<info part\="org.eclipse.ui.editorss" ratio\="0.24950495" ratioLeft\="252" ratioRight\="758" relationship\="2" relative\="left"/>\n<info folder\="true" part\="bottom" ratio\="0.74925375" ratioLeft\="502" ratioRight\="168" relationship\="4" relative\="org.eclipse.ui.editorss">\n<folder activePageID\="com.android.ide.eclipse.ddms.views.LogCatView" appearance\="2" expanded\="2">\n<page content\="org.eclipse.ui.views.ProblemView" label\="Problems"/>\n<page content\="org.eclipse.jdt.ui.JavadocView" label\="Javadoc"/>\n<page content\="org.eclipse.jdt.ui.SourceView" label\="Declaration"/>\n<page content\="org.eclipse.ui.console.ConsoleView" label\="Console"/>\n<page content\="com.android.ide.eclipse.ddms.views.LogCatView" label\="LogCat"/>\n<page content\="org.eclipse.search.ui.views.SearchView" label\="LabelNotFound"/>\n<page content\="org.eclipse.ui.views.BookmarkView" label\="LabelNotFound"/>\n<page content\="org.eclipse.ui.views.ProgressView" label\="LabelNotFound"/>\n<presentation id\="org.eclipse.ui.presentations.WorkbenchPresentationFactory">\n<part id\="0"/>\n<part id\="1"/>\n<part id\="2"/>\n<part id\="3"/>\n<part id\="4"/>\n</presentation>\n</folder>\n</info>\n<info folder\="true" part\="right" ratio\="0.74934036" ratioLeft\="568" ratioRight\="190" relationship\="2" relative\="org.eclipse.ui.editorss">\n<folder activePageID\="org.eclipse.ui.views.ContentOutline" appearance\="2" expanded\="2">\n<page content\="org.eclipse.ui.views.ContentOutline" label\="Outline"/>\n<page content\="org.eclipse.ui.texteditor.TemplatesView" label\="LabelNotFound"/>\n<page content\="org.eclipse.ant.ui.views.AntView" label\="LabelNotFound"/>\n<presentation id\="org.eclipse.ui.presentations.WorkbenchPresentationFactory">\n<part id\="0"/>\n</presentation>\n</folder>\n</info>\n</mainWindow>\n</layout>\n</perspective>
 /instance/org.eclipse.jdt.ui/formatter_profile=org.eclipse.jdt.ui.default_profile
+/instance/org.eclipse.wst.css.ui/css_content_assist_own_page_sort_order=org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000org.eclipse.wst.css.ui.proposalCategory.css\u0000
 /instance/org.python.pydev/CLASS_NAME_COLOR=202,230,130
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
 /instance/org.eclipse.cdt.ui/semanticHighlighting.class.enabled=true
@@ -58,7 +59,7 @@
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.parameterVariable.color=121,171,255
 /instance/org.eclipse.cdt.ui/semanticHighlighting.function.color=223,190,149
 /instance/org.eclipse.datatools.sqltools.sqleditor/Keyword=0,0,0,0,0,239,239,175
-/instance/org.eclipse.wst.html.ui/xmlContent=\#f6f3e8 | null | false | false | false | false
+/instance/org.eclipse.wst.html.ui/xmlContent=\#F6F3E8 | null | false | false | false | false
 /instance/org.eclipse.jdt.ui/semanticHighlighting.staticMethodInvocation.enabled=true
 /instance/org.codehaus.groovy.eclipse.ui/groovy.editor.groovyDoc.tag.enabled=true
 /instance/org.eclipse.ui.editors/PHPReadOccurrenceIndicationColor=97,97,97
@@ -192,6 +193,7 @@
 /instance/com.adobe.flexide.as.core/asClassStrikethrough=false
 /instance/org.eclipse.wst.jsdt.ui/semanticHighlighting.localVariable.enabled=true
 /instance/com.adobe.flexide.as.core/asFunctionColor=\#DFBE95
+/instance/org.eclipse.wst.css.core/indentationChar=space
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.staticFinalField.bold=false
 /instance/org.codehaus.groovy.eclipse.ui/groovy.editor.groovyDoc.link.color=168,147,204
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.class.enabled=true
@@ -228,7 +230,7 @@
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
 /instance/org.eclipse.cdt.ui/semanticHighlighting.localVariableDeclaration.color=212,196,169
 /instance/org.epic.perleditor/invalidColor=255,255,255
-/instance/org.eclipse.wst.html.ui/tagBorder=\#d4c4a9 | null | false | false | false | false
+/instance/org.eclipse.wst.html.ui/tagBorder=\#D4C4A9 | null | false | false | false | false
 /instance/org.eclipse.jdt.ui/semanticHighlighting.typeParameter.enabled=true
 /instance/org.eclipse.cdt.ui/org.eclipse.cdt.internal.ui.text.doctools.multi=179,181,175
 /instance/org.eclipse.wst.jsdt.ui/semanticHighlighting.methodDeclarationName.enabled=true
@@ -263,6 +265,7 @@
 /instance/com.android.ide.eclipse.adt/design.structure.flyout.width=383
 /instance/org.eclipse.jdt.ui/semanticHighlighting.enum.enabled=true
 /instance/com.adobe.flexide.css.core/cssNamespaceColor=\#F6F3E8
+/instance/org.eclipse.wst.css.ui/css_content_assist_default_page_sort_order=org.eclipse.wst.css.ui.proposalCategory.css\u0000org.eclipse.wst.css.ui.proposalCategory.cssTemplates\u0000
 /instance/com.adobe.flexide.css.core/cssSymbolColor=\#EFEFAF
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.field.color=179,183,132
 /instance/org.epic.perleditor/literal1Color=204,147,147
@@ -295,7 +298,7 @@
 /instance/org.eclipse.php.ui/semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.InternalClassHighlighting.enabled=true
 /instance/org.eclipse.wst.html.ui/tagAttributeName=\#B3B784 | null | false | false | false | false
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.enum.color=127,179,71
-/instance/org.eclipse.wst.html.ui/tagName=\#d4c4a9 | null | false | false | false | false
+/instance/org.eclipse.wst.html.ui/tagName=\#D4C4A9 | null | false | false | false | false
 /instance/org.eclipse.jdt.ui/semanticHighlighting.staticFinalField.color=83,220,205
 /instance/org.epic.perleditor/errorIndicationColorBold=false
 /configuration/org.eclipse.ui.ide/SHOW_WORKSPACE_SELECTION_DIALOG=false
@@ -317,7 +320,7 @@
 @org.eclipse.wst.sse.ui=1.3.101.v201208170345
 /instance/org.eclipse.wst.html.ui/newFileTemplateName=New HTML File (4.01 transitional)
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.annotation.enabled=true
-/instance/org.eclipse.wst.html.ui/entityReference=\#efefaf | null | false | false | false | false
+/instance/org.eclipse.wst.html.ui/entityReference=\#EFEFAF | null | false | false | false | false
 /instance/org.eclipse.php.ui/semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.InternalClassHighlighting.underline=false
 /instance/org.eclipse.jdt.ui/java_bracket=255,255,255
 /instance/com.adobe.flexide.mxml.core/mxmlCommentColor=\#7F9F7F
@@ -339,10 +342,12 @@
 /instance/org.eclipse.jdt.ui/formatter_settings_version=12
 /instance/org.eclipse.jdt.ui/semanticHighlighting.field.bold=false
 /instance/org.eclipse.jdt.ui/spelling_ignore_sentence=true
+/instance/org.eclipse.wst.css.ui/org.eclipse.wst.sse.ui.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.editor.tab.width=
 /instance/org.epic.perleditor/variableColor=212,196,169
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.insert_space_before_opening_brace_in_array_initializer=do not insert
 /instance/org.eclipse.wst.jsdt.ui/org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+@org.eclipse.wst.css.core=1.1.601.v201208170345
 /instance/org.eclipse.wst.jsdt.ui/java_bracket=255,255,255
 /instance/org.eclipse.wst.css.ui/COMMENT=\#7F9F7F | null | false | false | false | false
 @org.eclipse.php.ui=3.1.1.201209101312
@@ -416,6 +421,7 @@
 /instance/org.epic.perleditor/warningIndicationColor=204,147,147
 /instance/org.eclipse.jdt.core/org.eclipse.jdt.core.formatter.alignment_for_superinterfaces_in_type_declaration=64
 /instance/org.epic.perleditor/AbstractTextEditor.Color.Foreground.SystemDefault=false
+/instance/org.eclipse.wst.css.core/indentationSize=2
 /instance/org.eclipse.wst.css.ui/newFileTemplateName=New CSS File
 /instance/org.eclipse.cdt.ui/semanticHighlighting.namespace.enabled=true
 /instance/com.android.ide.eclipse.adt/com.android.ide.eclipse.adt.xmlEditor=true
@@ -536,7 +542,7 @@ file_export_version=3.0
 /instance/org.eclipse.dltk.ui/useQuickDiffPrefPage=true
 /instance/org.eclipse.cdt.ui/org.eclipse.cdt.internal.ui.text.doctools.recognizedTag=147,147,204
 /instance/org.eclipse.wst.html.ui/doctypeExtrenalSysref=\#DFBE95 | null | false | false | false | false
-/instance/org.eclipse.wst.html.core/inlineElements=sub,img,td,sup,br,th,strike,title,basefont,acronym,b,select,font,a,abbr,label,i,cite,li,u,input,s,strong,q,em,big,small,span
+/instance/org.eclipse.wst.html.core/inlineElements=sub,img,td,sup,br,th,title,strike,basefont,b,acronym,font,select,a,abbr,label,i,cite,li,u,input,s,strong,q,em,big,small,span
 /instance/org.eclipse.ui.editors/filteredSearchResultIndicationColor=63,63,106
 /configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=5
 /instance/org.eclipse.cdt.ui/c_type=239,239,175
@@ -569,6 +575,7 @@ file_export_version=3.0
 /instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.visibility.order=B,V,R,D,
 /instance/com.android.ide.eclipse.ddms/logcat.view.colsize.Time=156
 /instance/org.codehaus.groovy.eclipse.ui/semanticHighlighting.number.enabled=true
+/instance/org.eclipse.wst.html.ui/tagAttributeEquals=\#F6F3E8 | null | false | false | false | false
 /instance/org.eclipse.jdt.ui/pf_coloring_assignment=246,243,232
 /instance/org.eclipse.jdt.ui/semanticHighlighting.number.enabled=true
 /instance/org.eclipse.jdt.ui/semanticHighlighting.staticFinalField.bold=false
