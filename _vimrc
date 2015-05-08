@@ -130,6 +130,10 @@ map <F3> :!python %<CR>
 " Przewijanie z podglądem kilku linii
 set scrolloff=3
 
+" Ustawia publiczny schowek na schowek z pustą nazwą
+" Pozwala na wygodne korzystanie
+set clipboard=unnamed
+
 " Pokazuj białe znaki
 set list!
 set listchars=tab:>-,trail:~
