@@ -46,14 +46,16 @@ vmap 0 $0
 vmap $ g$
 
 " Poruszanie się pomiędzy podziałem okien
-map <C-h> <c-w>h
-map <C-j> <c-w>j
-map <C-k> <c-w>k
-map <C-l> <c-w>l
-imap <C-h> <ESC><c-w>h
-imap <C-j> <ESC><c-w>j
-imap <C-k> <ESC><c-w>k
-imap <C-l> <ESC><c-w>l
+"map <C-h> <c-w>h
+"map <C-j> <c-w>j
+"map <C-k> <c-w>k
+"map <C-l> <c-w>l
+"" To poniżej powoduje problemy w konsoli windowsa.
+"" Jest traktowane jako Backspace.
+""imap <C-h> <ESC><c-w>h
+"imap <C-j> <ESC><c-w>j
+"imap <C-k> <ESC><c-w>k
+"imap <C-l> <ESC><c-w>l
 
 " Poruszanie się pomiędzy zakładkami
 map <tab> :tabn<CR>
@@ -71,7 +73,7 @@ set numberwidth=1
 set mouse=a 
 
 set wrap " zawijanie linii wlaczone
-"set textwidth=0 " ustawia dlugosc linii na zero, nie bedzie automatycznie robil wciec
+set textwidth=0 " ustawia dlugosc linii na zero, nie bedzie automatycznie robil wciec
 set wildmode=longest,list "wyswietla liste mozliwosci przy dopasowaniu, oraz dopasowuje najdluzsze
 
 " Vim nie bedzie zostawial kopii zapisywanych plikow
@@ -96,7 +98,7 @@ map <F7> <ESC>:bp!<CR>
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-
+"
 " Spellcheck
 " Załaduj języki, ale domyślnie wyłącz pokazywanie błędów
 setlocal spell spelllang=pl
@@ -166,7 +168,7 @@ set encoding=utf-8
 set fileencoding=utf-8
 "set fileencoding=cp1250
 
-" Więcej kolorów
+ Więcej kolorów
 set t_Co=256
 
 " Kolorowanie składni
