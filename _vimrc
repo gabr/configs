@@ -1,8 +1,8 @@
-" WyÅ‚Ä…cza kompatybilnoÅ›Ä‡ wstecznÄ… z vi
+" Wy³¹cza kompatybilnoœæ wsteczn¹ z vi
 set nocp
 
-" Ulepszenie dziaÅ‚ania backspace
-" Teraz usuwa nawet przy Å‚amaniu linii i nowych linach
+" Ulepszenie dzia³ania backspace
+" Teraz usuwa nawet przy ³amaniu linii i nowych linach
 set backspace=indent,eol,start
 
 " Nie lam slow w srodku
@@ -13,13 +13,13 @@ set nolist
 " reload files changed outside vim
 set autoread
 
-" Oznacz Å‚amane linie
-:set showbreak=_
+" Oznacz ³amane linie
+set showbreak=_
 
-" ZwiÄ™ksz historiÄ™
+" Zwiêksz historiê
 set history=64
 
-" Wyszukuje frazÄ™ podczas jej wpisywania
+" Wyszukuje frazê podczas jej wpisywania
 "set incsearch
 
 " Make search case insensitive
@@ -31,11 +31,11 @@ set smartcase
 set showmode
 "set showcmd
 
-" Mapowanie klawiszy strzaÅ‚ek
+" Mapowanie klawiszy strza³ek
 map <Down> g<Down>
 map <Up> g<Up>
 
-" UÅ‚atwia poruszanie po Å‚amanych liniach
+" U³atwia poruszanie po ³amanych liniach
 nmap j gj
 nmap k gk
 vmap j gj
@@ -45,32 +45,34 @@ nmap $ g$
 vmap 0 $0
 vmap $ g$
 
-" Poruszanie siÄ™ pomiÄ™dzy podziaÅ‚em okien
+" Poruszanie siê pomiêdzy podzia³em okien
 "map <C-h> <c-w>h
 "map <C-j> <c-w>j
 "map <C-k> <c-w>k
 "map <C-l> <c-w>l
-"" To poniÅ¼ej powoduje problemy w konsoli windowsa.
+"" To poni¿ej powoduje problemy w konsoli windowsa.
 "" Jest traktowane jako Backspace.
 ""imap <C-h> <ESC><c-w>h
 "imap <C-j> <ESC><c-w>j
 "imap <C-k> <ESC><c-w>k
 "imap <C-l> <ESC><c-w>l
 
-" Poruszanie siÄ™ pomiÄ™dzy zakÅ‚adkami
-map <tab> :tabn<CR>
-map <s-tab> :tabp<CR>
-map <c-n> :tabnew<CR>
+" Poruszanie siê pomiêdzy zak³adkami
+"map <tab> :tabn<CR>
+"map <s-tab> :tabp<CR>
+"map <c-n> :tabnew<CR>
 
-" PokaÅ¼ pasujÄ…ce nawiasy
-set showmatch
+" Poka¿ pasuj¹ce nawiasy
+"set showmatch
+" Ukryj pasuj¹ce nawiasy
+let loaded_matchparen = 1
 
-" OdlegÅ‚oÅ›Ä‡ od numerÃ³w lini
+" Odleg³oœæ od numerów lini
 set numberwidth=1
 "set nu " lub set number, wlacza numerowanie wierszy
 
 " Mysz dziala wszedzie przy zaznaczaniu, wklejaniu
-set mouse=a 
+"set mouse=a
 
 set wrap " zawijanie linii wlaczone
 set textwidth=0 " ustawia dlugosc linii na zero, nie bedzie automatycznie robil wciec
@@ -80,13 +82,13 @@ set wildmode=longest,list "wyswietla liste mozliwosci przy dopasowaniu, oraz dop
 set nobackup 
 
 " Klawisz F2 ustawiamy jako przelacznik wyswietlania linii
-map <F2> :set number! <Bar>set number?<CR>
+map <F2>:set relativenumber!<CR>:set number!<CR>
 
-" zapis aktualnej sesji i wszystkich plikÃ³w
+" zapis aktualnej sesji i wszystkich plików
 imap <F9> <ESC>:w!<CR>:wa!<CR>:mks!<CR>:bufdo w!<CR>:wa!<CR>
 map <F9> :w!<CR>:wa!<CR>:mks!<CR>:bufdo w!<CR>:wa!<CR>
 
-" przewijanie buforÃ³w
+" przewijanie buforów
 map <F5> :ls<CR>
 imap <F5> <ESC>:ls<CR>
 map <F6> :bn!<CR>
@@ -94,13 +96,17 @@ imap <F6> <ESC>:bn!<CR>
 map <F7> :bp!<CR>
 map <F7> <ESC>:bp!<CR>
 
-" To jest skopiowany kod, wyglÄ…da jak kolorowanie skÅ‚adni do python, Å‚adne zostawiÄ™ :D
+" To jest skopiowany kod, wygl¹da jak kolorowanie sk³adni do python,
+" ³adne zostawiê :D
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
-"
+autocmd BufRead *.py set nocindent
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+filetype plugin indent on
+
 " Spellcheck
-" ZaÅ‚aduj jÄ™zyki, ale domyÅ›lnie wyÅ‚Ä…cz pokazywanie bÅ‚Ä™dÃ³w
+" Za³aduj jêzyki, ale domyœlnie wy³¹cz pokazywanie b³êdów
 setlocal spell spelllang=pl
 map <F8> :set spell! <Bar>set spell?<CR>
 map <C-p> :setlocal spell spelllang=pl<CR>
@@ -109,24 +115,24 @@ set nospell
 
 " Fullscreen
 " http://www.vim.org/scripts/script.php?script_id=2596
-map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
+"map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
 " show/hide NERDTree
 map <silent> <f1> :NERDTreeToggle<CR>
 
-" Taby i wciÄ™cia
-set tabstop=4
+" Taby i wciêcia
+set tabstop=2
 set cindent
 set smartindent
 set autoindent
 
-"set noexpandtab            " nie zamienia tabulatorÃ³w na spacje
+"set noexpandtab            " nie zamienia tabulatorów na spacje
 set expandtab               " zamienia tabulatory na spacje
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 set cinkeys=0{,0},0:,0#,!^F,o,O,e
 
-" Linia na dÅ‚ugoÅ›ci 80 znakÃ³w:
+" Linia na d³ugoœci 80 znaków:
 "set colorcolumn=80
 
 " You can control its colour by adding this to your colourscheme file:
@@ -138,7 +144,7 @@ set cinkeys=0{,0},0:,0#,!^F,o,O,e
 "    autocmd bufwritepost _vimrc source $HOME\_vimrc
 "endif
 
-" ustawienia kompilowania i uruchamiania programÃ³w
+" ustawienia kompilowania i uruchamiania programów
 "autocmd BufEnter *.cpp imap <F3> <ESC>:w!<CR>:!g++ %<CR>:!chmod +x a.out<CR>
 "autocmd BufEnter *.cpp map <F3> :w!<CR>:!g++ %<CR><ESC>:!chmod +x a.out<CR>
 "autocmd BufEnter *.cpp imap <F4> <ESC>:!./a.out<CR>
@@ -148,80 +154,84 @@ set cinkeys=0{,0},0:,0#,!^F,o,O,e
 "imap <F3> :!./%<CR>
 "map  <F3> :!./%<CR>
 
-" Aktualnie uÅ¼ywam vima do Pythona wiÄ™c wrzucam tutaj pythona:
-imap <F3> <ESC>:!python %<CR>
-map <F3> :!python %<CR>
+" Do pythona
+"imap <F3> <ESC>:!python %<CR>
+"map <F3> :!python %<CR>
 
-" Przewijanie z podglÄ…dem kilku linii
+" Przewijanie z podgl¹dem kilku linii
 set scrolloff=3
 
-" Ustawia publiczny schowek na schowek z pustÄ… nazwÄ…
+" Ustawia publiczny schowek na schowek z pust¹ nazw¹
 " Pozwala na wygodne korzystanie
 set clipboard=unnamed
 
-" Pokazuj biaÅ‚e znaki
+" Pokazuj bia³e znaki
 set list!
 set listchars=tab:>-,trail:~
 
 " Kodowanie
-set encoding=utf-8
-set fileencoding=utf-8
+"set encoding=cp1250
 "set fileencoding=cp1250
+set encoding=utf8
+set fileencoding=utf8
 
- WiÄ™cej kolorÃ³w
+" Wiêcej kolorów
 set t_Co=256
 
-" Kolorowanie skÅ‚adni
+" Kolorowanie sk³adni
 syntax on
 
-" DomyÅ›lne kolory
+" Domyœlne kolory
 set background=dark
 colo pablo
 
-" WyÅ‚Ä…cz dÅºwiÄ™ki
+" Wy³¹cz dŸwiêki
 set vb t_vb=
 
-" WyÅ‚acz antyaliasting - nie dziaÅ‚a na windowsie
+" Wy³acz antyaliasting - nie dzia³a na windowsie
 "set noantialias
 
-" Oznacz obecnÄ… liniÄ™
-"set cursorline
-"hi cursorline ctermfg=NONE ctermbg=1
+" Oznacz obecn¹ liniê
+set cursorline
+hi cursorline ctermfg=NONE ctermbg=1
 
 " Ustawienia lightline plugin
-" Musi byÄ‡ wÅ‚Ä…czone wiÄ™cej kolorÃ³w: set t_Co=256
+" Musi byæ w³¹czone wiêcej kolorów: set t_Co=256
 let g:lightline = {
     \ 'colorscheme': 'powerline',
     \ }
 
-" WyÅ‚Ä…cz status bar - pokaÅ¼e siÄ™ dopiero przy podziale okien
+" Wy³¹cz status bar - poka¿e siê dopiero przy podziale okien
 set laststatus=1
+
+" Podœwietlanie sk³adnie na podstawie rozszerzenia pliku
+au BufRead,BufNewFile *.iss set syntax=Pascal
 
 " Ustawienia dla gVima
 if has("gui_running")
     " Kolory
     colo hybrid
 
-    set guifont=DejaVu_Sans_Mono:h8:cEASTEUROPE
-    " WyÅ‚Ä…czenie wszystkich elementÃ³w gui: paska narzÄ™dzi, paskÃ³w przewijania itd
+    set guifont=DejaVu_Sans_Mono:h10:cEASTEUROPE
+    " Wy³¹czenie wszystkich elementów gui: paska narzêdzi, pasków przewijania itd
     set guioptions=egtaci
-   " WyÅ‚Ä…czenie sygnaÅ‚Ã³w dÅºwiÄ™kowych i Å›wietlnych dla bÅ‚Ä™dÃ³w
+   " Wy³¹czenie sygna³ów dŸwiêkowych i œwietlnych dla b³êdów
     autocmd GUIEnter * set vb t_vb=
 
-    " Oznacz obecnÄ… liniÄ™
+    " Oznacz obecn¹ liniê
     "set cursorline
     "hi CursorLine guibg=gray15
 
-    " DomyÅ›lne rozmiary okna
+    " Domyœlne rozmiary okna
     set lines=22 columns=83
 
     " Ustawienia lightline plugin
-    " Musi byÄ‡ wÅ‚Ä…czone wiÄ™cej kolorÃ³w: set t_Co=256
+    " Musi byæ w³¹czone wiêcej kolorów: set t_Co=256
     let g:lightline = {
         \ 'colorscheme': 'powerline',
         \ }
 
-    " WÅ‚Ä…cz na staÅ‚e status bar
+    " W³¹cz na sta³e status bar
     set laststatus=2
 
 endif
