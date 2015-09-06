@@ -73,6 +73,8 @@ set numberwidth=1
 
 " Mysz dziala wszedzie przy zaznaczaniu, wklejaniu
 "set mouse=a
+" Dzia³a tylko scroll od myszy
+set mouse=c
 
 set wrap " zawijanie linii wlaczone
 set textwidth=0 " ustawia dlugosc linii na zero, nie bedzie automatycznie robil wciec
