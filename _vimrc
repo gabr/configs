@@ -6,9 +6,9 @@ set nocp
 set backspace=indent,eol,start
 
 " Nie lam slow w srodku
-set linebreak
-set wrap linebreak nolist
-set nolist
+"set linebreak
+"set wrap linebreak nolist
+"set nolist
 
 " reload files changed outside vim
 set autoread
@@ -36,14 +36,14 @@ map <Down> g<Down>
 map <Up> g<Up>
 
 " U³atwia poruszanie po ³amanych liniach
-nmap j gj
-nmap k gk
-vmap j gj
-vmap k gk
-nmap 0 g0
-nmap $ g$
-vmap 0 $0
-vmap $ g$
+"nmap j gj
+"nmap k gk
+"vmap j gj
+"vmap k gk
+"nmap 0 g0
+"nmap $ g$
+"vmap 0 $0
+"vmap $ g$
 
 " Poruszanie siê pomiêdzy podzia³em okien
 "map <C-h> <c-w>h
@@ -76,7 +76,6 @@ set numberwidth=1
 " Dzia³a tylko scroll od myszy
 set mouse=c
 
-set wrap " zawijanie linii wlaczone
 set textwidth=0 " ustawia dlugosc linii na zero, nie bedzie automatycznie robil wciec
 set wildmode=longest,list "wyswietla liste mozliwosci przy dopasowaniu, oraz dopasowuje najdluzsze
 
@@ -119,9 +118,6 @@ set nospell
 " http://www.vim.org/scripts/script.php?script_id=2596
 "map <F11> <Esc>:call libcallnr("gvimfullscreen.dll", "ToggleFullScreen", 0)<CR>
 
-" show/hide NERDTree
-map <silent> <f1> :NERDTreeToggle<CR>
-
 " Taby i wciêcia
 set tabstop=2
 set cindent
@@ -161,7 +157,7 @@ set cinkeys=0{,0},0:,0#,!^F,o,O,e
 "map <F3> :!python %<CR>
 
 " Przewijanie z podgl¹dem kilku linii
-set scrolloff=3
+set scrolloff=2
 
 " Ustawia publiczny schowek na schowek z pust¹ nazw¹
 " Pozwala na wygodne korzystanie
@@ -194,7 +190,7 @@ set vb t_vb=
 "set noantialias
 
 " Oznacz obecn¹ liniê
-set cursorline
+"set cursorline
 hi cursorline ctermfg=NONE ctermbg=1
 
 " Ustawienia lightline plugin
@@ -209,6 +205,9 @@ set laststatus=1
 " Podœwietlanie sk³adnie na podstawie rozszerzenia pliku
 au BufRead,BufNewFile *.iss set syntax=Pascal
 
+" Wy³¹cz zawijanie wierszy
+set nowrap
+
 " Ustawienia dla gVima
 if has("gui_running")
     " Kolory
@@ -221,20 +220,14 @@ if has("gui_running")
     autocmd GUIEnter * set vb t_vb=
 
     " Oznacz obecn¹ liniê
-    "set cursorline
+    set cursorline
     "hi CursorLine guibg=gray15
 
     " Domyœlne rozmiary okna
     set lines=22 columns=83
 
-    " Ustawienia lightline plugin
-    " Musi byæ w³¹czone wiêcej kolorów: set t_Co=256
-    let g:lightline = {
-        \ 'colorscheme': 'powerline',
-        \ }
-
-    " W³¹cz na sta³e status bar
-    set laststatus=2
+    " W³¹cz status bar dopiero przy podziale okna
+    set laststatus=1
 
 endif
 
